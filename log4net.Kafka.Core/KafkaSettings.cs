@@ -1,5 +1,8 @@
 ﻿namespace log4net.Kafka.Core
 {
+    /// <summary>
+    /// Kafka 参数配置
+    /// </summary>
     public class KafkaSettings
     {
         /// <summary>

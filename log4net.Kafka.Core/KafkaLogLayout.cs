@@ -7,6 +7,9 @@ using System.Net;
 
 namespace log4net.Kafka.Core
 {
+    /// <summary>
+    /// Kafka日志模板
+    /// </summary>
     public class KafkaLogLayout : LayoutSkeleton
     {
         /// <summary>

@@ -36,11 +36,14 @@
         public string RenderedMessage { get; set; }
 
         /// <summary>
-        /// 异常
+        /// 异常信息
         /// </summary>
         public KafkaLogException Exception { get; set; }
     }
 
+    /// <summary>
+    /// 异常信息实体
+    /// </summary>
     public class KafkaLogException
     {
         /// <summary>

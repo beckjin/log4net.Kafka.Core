@@ -9,6 +9,9 @@ using System.Text;
 
 namespace log4net.Kafka.Core
 {
+    /// <summary>
+    /// log4net KafkaAppender
+    /// </summary>
     public class KafkaAppender : AppenderSkeleton
     {
         /// <summary>
@@ -21,18 +24,28 @@ namespace log4net.Kafka.Core
         /// </summary>
         public KafkaSettings KafkaSettings { get; set; }
 
+        /// <summary>
+        /// 初始化
+        /// </summary>
         public override void ActivateOptions()
         {
             base.ActivateOptions();
             Init();
         }
 
+        /// <summary>
+        /// 注销
+        /// </summary>
         protected override void OnClose()
         {
             base.OnClose();
             Dispose();
         }
 
+        /// <summary>
+        /// 记录日志
+        /// </summary>
+        /// <param name="loggingEvent"></param>
         protected override void Append(LoggingEvent loggingEvent)
         {
             var message = GetMessage(loggingEvent);

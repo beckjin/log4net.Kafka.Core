@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
@@ -9,5 +9,25 @@
     <PackageReference Include="log4net" Version="2.0.8" />
     <PackageReference Include="Newtonsoft.Json" Version="11.0.2" />
   </ItemGroup>
+
+  <PropertyGroup>
+    <Title>log4net.Kafka.Core</Title>
+    <Version>0.1.0</Version>
+    <Authors>Beck Jin</Authors>
+    <PackageTags>log4net,Kafka</PackageTags>
+    <Description>log4net appender to Kafka</Description>
+    <ProjectUrl>https://github.com/beckjin/log4net.Kafka.Core/</ProjectUrl>
+    <ReleaseNotes>first release</ReleaseNotes>
+    <Copyright>Copyright © 2018</Copyright>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <GenerateSerializationAssemblies>Auto</GenerateSerializationAssemblies>
+    <DocumentationFile>bin\Debug\netstandard2.0\log4net.Kafka.Core.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DocumentationFile>bin\Release\netstandard2.0\log4net.Kafka.Core.xml</DocumentationFile>
+  </PropertyGroup>
 
 </Project>
