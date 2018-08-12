@@ -1,6 +1,4 @@
-
 log4net.Kafka.Core
-
 ==========
 
 ## Quick Start
