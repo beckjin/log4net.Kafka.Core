@@ -5,19 +5,19 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Confluent.Kafka" Version="0.11.5" />
+    <PackageReference Include="Confluent.Kafka" Version="0.11.6" />
     <PackageReference Include="log4net" Version="2.0.8" />
     <PackageReference Include="Newtonsoft.Json" Version="11.0.2" />
   </ItemGroup>
 
   <PropertyGroup>
     <Title>log4net.Kafka.Core</Title>
-    <Version>0.1.0</Version>
+    <Version>1.0.2</Version>
     <Authors>Beck Jin</Authors>
     <PackageTags>log4net,Kafka</PackageTags>
     <Description>log4net appender to Kafka</Description>
     <ProjectUrl>https://github.com/beckjin/log4net.Kafka.Core/</ProjectUrl>
-    <ReleaseNotes>first release</ReleaseNotes>
+    <ReleaseNotes>log4net.Kafka.Core</ReleaseNotes>
     <Copyright>Copyright © 2018</Copyright>
   </PropertyGroup>
 

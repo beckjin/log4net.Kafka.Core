@@ -48,12 +48,12 @@ namespace log4net.Kafka.Core
         {
             var obj = new KafkaLog
             {
-                Timestamp = Convert.ToInt64((DateTime.Now.ToUniversalTime() - new DateTime(1970, 1, 1, 0, 0, 0, 0)).TotalMilliseconds),
+                LogTimestamp = Convert.ToInt64((DateTime.Now.ToUniversalTime() - new DateTime(1970, 1, 1, 0, 0, 0, 0)).TotalMilliseconds),
                 AppId = AppId,
                 HostName = Dns.GetHostName(),
                 Level = loggingEvent.Level.ToString(),
                 LoggerName = loggingEvent.LoggerName,
-                RenderedMessage = loggingEvent.RenderedMessage
+                Message = loggingEvent.RenderedMessage
             };
 
             if (loggingEvent.ExceptionObject != null)
