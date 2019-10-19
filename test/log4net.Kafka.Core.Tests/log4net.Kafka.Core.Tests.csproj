@@ -11,7 +11,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\log4net.Kafka.Core\log4net.Kafka.Core.csproj" />
+    <ProjectReference Include="..\..\src\log4net.Kafka.Core\log4net.Kafka.Core.csproj" />
   </ItemGroup>
 
   <ItemGroup>
@@ -19,5 +19,4 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
   </ItemGroup>
-
 </Project>
