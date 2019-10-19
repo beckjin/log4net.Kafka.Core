@@ -1,7 +1,7 @@
 ﻿using Microsoft.Extensions.Logging;
 using System;
 
-namespace log4net.Kafka.Core.App
+namespace log4net.Kafka.Core.Tests
 {
     class Program
     {

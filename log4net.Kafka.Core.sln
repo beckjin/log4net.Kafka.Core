@@ -1,11 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.27703.2042
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29306.81
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "log4net.Kafka.Core", "log4net.Kafka.Core\log4net.Kafka.Core.csproj", "{43E70B6F-FC4D-4C43-AA9C-B187B04CD2AC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "log4net.Kafka.Core.App", "log4net.Kafka.Core.App\log4net.Kafka.Core.App.csproj", "{7F565F00-2CF5-4F59-B63F-276A042A90DE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "log4net.Kafka.Core.Tests", "log4net.Kafka.Core.Tests\log4net.Kafka.Core.Tests.csproj", "{D583BFE8-232B-44EC-9CA2-B0F0D1FE03D2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +17,10 @@ Global
 		{43E70B6F-FC4D-4C43-AA9C-B187B04CD2AC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{43E70B6F-FC4D-4C43-AA9C-B187B04CD2AC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{43E70B6F-FC4D-4C43-AA9C-B187B04CD2AC}.Release|Any CPU.Build.0 = Release|Any CPU
-		{7F565F00-2CF5-4F59-B63F-276A042A90DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{7F565F00-2CF5-4F59-B63F-276A042A90DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{7F565F00-2CF5-4F59-B63F-276A042A90DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{7F565F00-2CF5-4F59-B63F-276A042A90DE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D583BFE8-232B-44EC-9CA2-B0F0D1FE03D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D583BFE8-232B-44EC-9CA2-B0F0D1FE03D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D583BFE8-232B-44EC-9CA2-B0F0D1FE03D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D583BFE8-232B-44EC-9CA2-B0F0D1FE03D2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

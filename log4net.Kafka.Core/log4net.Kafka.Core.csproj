@@ -4,30 +4,39 @@
     <TargetFramework>netstandard2.0</TargetFramework>
   </PropertyGroup>
 
-  <ItemGroup>
-    <PackageReference Include="Confluent.Kafka" Version="0.11.6" />
-    <PackageReference Include="log4net" Version="2.0.8" />
-    <PackageReference Include="Newtonsoft.Json" Version="11.0.2" />
-  </ItemGroup>
-
   <PropertyGroup>
+    <PackageId>log4net.Kafka.Core</PackageId>
     <Title>log4net.Kafka.Core</Title>
-    <Version>1.0.2</Version>
+    <Version>1.1.0</Version>
     <Authors>Beck Jin</Authors>
     <PackageTags>log4net,Kafka</PackageTags>
+    <DebugSymbols>true</DebugSymbols>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <GeneratePackageOnBuild Condition="'$(Configuration)'=='Release'">true</GeneratePackageOnBuild>
+    <IncludeSymbols>true</IncludeSymbols>
+    <LangVersion>latest</LangVersion>
+    <PackageProjectUrl>https://github.com/beckjin/log4net.Kafka.Core/</PackageProjectUrl>
+		<RepositoryUrl>https://github.com/beckjin/log4net.Kafka.Core/</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <SignAssembly>true</SignAssembly>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PublishRepositoryUrl>true</PublishRepositoryUrl>
+    <Copyright>Copyright © 2019</Copyright>
     <Description>log4net appender to Kafka</Description>
-    <ProjectUrl>https://github.com/beckjin/log4net.Kafka.Core/</ProjectUrl>
-    <ReleaseNotes>log4net.Kafka.Core</ReleaseNotes>
-    <Copyright>Copyright © 2018</Copyright>
   </PropertyGroup>
 
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-    <GenerateSerializationAssemblies>Auto</GenerateSerializationAssemblies>
-    <DocumentationFile>bin\Debug\netstandard2.0\log4net.Kafka.Core.xml</DocumentationFile>
-  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Confluent.Kafka" Version="1.2.1" />
+    <PackageReference Include="log4net" Version="2.0.8" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.2" />
+  </ItemGroup>
 
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
-    <DocumentationFile>bin\Release\netstandard2.0\log4net.Kafka.Core.xml</DocumentationFile>
-  </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="Confluent.Kafka" Version="1.2.1" />
+    <PackageReference Include="log4net" Version="2.0.8" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.2" />
+  </ItemGroup>
+
+  
 </Project>

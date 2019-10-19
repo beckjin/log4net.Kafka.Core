@@ -1,11 +1,8 @@
 ﻿using Confluent.Kafka;
-using Confluent.Kafka.Serialization;
 using log4net.Appender;
 using log4net.Core;
 using System;
-using System.Collections.Generic;
 using System.IO;
-using System.Text;
 
 namespace log4net.Kafka.Core
 {
@@ -17,7 +14,7 @@ namespace log4net.Kafka.Core
         /// <summary>
         /// Producer
         /// </summary>
-        private Producer<Null, string> _producer;
+        private IProducer<Null, string> _producer;
 
         /// <summary>
         /// Kafka 连接地址和主题配置
@@ -50,7 +47,7 @@ namespace log4net.Kafka.Core
         {
             var message = GetMessage(loggingEvent);
             var topic = KafkaSettings.Topic;
-            _producer.ProduceAsync(topic, null, message);
+            _producer.ProduceAsync(topic, new Message<Null, string> { Value = message });
         }
 
         // 根据 KafkaLogLayout 模板获取日志信息
@@ -85,11 +82,11 @@ namespace log4net.Kafka.Core
 
                 if (_producer == null)
                 {
-                    var config = new Dictionary<string, object>
+                    var config = new ProducerConfig
                     {
-                        { "bootstrap.servers", KafkaSettings.Broker }
+                        BootstrapServers = KafkaSettings.Broker
                     };
-                    _producer = new Producer<Null, string>(config, null, new StringSerializer(Encoding.UTF8));
+                    _producer = new ProducerBuilder<Null, string>(config).Build();
                 }
             }
             catch (Exception ex)
