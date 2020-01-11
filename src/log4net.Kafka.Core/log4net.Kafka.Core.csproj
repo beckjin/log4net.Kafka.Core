@@ -7,7 +7,7 @@
   <PropertyGroup>
     <PackageId>log4net.Kafka.Core</PackageId>
     <Title>log4net.Kafka.Core</Title>
-    <Version>1.1.0</Version>
+    <Version>1.1.1</Version>
     <Authors>Beck Jin</Authors>
     <PackageTags>log4net,Kafka</PackageTags>
     <DebugSymbols>true</DebugSymbols>
