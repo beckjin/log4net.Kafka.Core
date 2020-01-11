@@ -19,7 +19,7 @@
 		<RepositoryUrl>https://github.com/beckjin/log4net.Kafka.Core/</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
     <SignAssembly>true</SignAssembly>
-    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
     <PublishRepositoryUrl>true</PublishRepositoryUrl>
     <Copyright>Copyright © 2019</Copyright>
     <Description>log4net appender to Kafka</Description>
